@@ -7,7 +7,11 @@ struct SimpleFood: Identifiable {
     let price: Double
     let category: String
     let description: String
+
+    let FoodCategory : String
+
     let tag: String
+
 }
 
 // MARK: - Simple App State
