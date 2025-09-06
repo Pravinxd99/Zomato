@@ -9,6 +9,7 @@ struct SimpleFood: Identifiable {
     let description: String
 
     let FoodCategory : String
+    let Rating : Int
 
     let tag: String
 
