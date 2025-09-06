@@ -9,6 +9,7 @@ enum OrderStatus: String, CaseIterable, Codable {
     case outForDelivery = "Out for Delivery"
     case delivered = "Delivered"
     case cancelled = "Cancelled"
+    case inProcess = "In Process"
     
     var color: String {
         switch self {
@@ -18,6 +19,7 @@ enum OrderStatus: String, CaseIterable, Codable {
         case .outForDelivery: return "yellow"
         case .delivered: return "green"
         case .cancelled: return "red"
+        case .inProcess: return "teal"
         }
     }
 }
@@ -224,4 +226,4 @@ struct Category: Codable {
     let strCategory: String
     let strCategoryThumb: String
     let strCategoryDescription: String
-} 
+}
