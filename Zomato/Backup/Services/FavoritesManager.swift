@@ -5,6 +5,7 @@ class FavoritesManager {
     
     private let userDefaults = UserDefaults.standard
     private let favoritesKey = "userFavorites"
+    private let ratingsKeys = "userRatings"
     
     private init() {}
     

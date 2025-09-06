@@ -16,6 +16,7 @@ class UserDefaultsService {
         static let userProfileImage = "userProfileImage"
         static let lastLoginDate = "lastLoginDate"
         static let rememberMe = "rememberMe"
+        static let nickName = "nickName"
     }
     
     private init() {
