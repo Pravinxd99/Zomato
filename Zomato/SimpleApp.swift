@@ -7,7 +7,7 @@ struct SimpleFood: Identifiable {
     let price: Double
     let category: String
     let description: String
-
+    let discountedPrice : Double
     let FoodCategory : String
     let Rating : Int
 
