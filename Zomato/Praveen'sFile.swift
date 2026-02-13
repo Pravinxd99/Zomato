@@ -9,3 +9,6 @@ import Foundation
 // import Firebase
 // add schema
 // create db functions
+class ViewModel : ObservableObject {
+    
+}
