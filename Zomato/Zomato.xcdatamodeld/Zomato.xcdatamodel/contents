@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <entity name="CDOrder" representedClassName="CDOrder" syncable="YES" codeGenerationType="class">
-        <attribute name="customerName" optional="YES" attributeType="String"/>
-        <attribute name="customerPhone" optional="YES" attributeType="String"/>
-        <attribute name="deliveryAddress" optional="YES" attributeType="String"/>
-        <attribute name="estimatedDeliveryTime" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="id" optional="YES" attributeType="String"/>
-        <attribute name="orderDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
-        <attribute name="paymentMethod" optional="YES" attributeType="String"/>
-        <attribute name="status" optional="YES" attributeType="String"/>
-        <attribute name="totalAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <relationship name="orderItems" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDOrderItem" inverseName="order" inverseEntity="CDOrderItem"/>
-    </entity>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="24512" systemVersion="24G419" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="CDOrderItem" representedClassName="CDOrderItem" syncable="YES" codeGenerationType="class">
         <attribute name="foodCategory" optional="YES" attributeType="String"/>
         <attribute name="foodDescription" optional="YES" attributeType="String"/>
@@ -20,8 +8,9 @@
         <attribute name="foodName" optional="YES" attributeType="String"/>
         <attribute name="foodPrice" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="netDiscount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
-        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDOrder" inverseName="orderItems" inverseEntity="CDOrder"/>
+        <relationship name="order" optional="YES" maxCount="1" deletionRule="Nullify"/>
     </entity>
     <entity name="CDUser" representedClassName="CDUser" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String"/>
@@ -35,10 +24,4 @@
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="timestamp" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
     </entity>
-    <elements>
-        <element name="CDOrder" positionX="-63" positionY="-18" width="128" height="44"/>
-        <element name="CDOrderItem" positionX="-63" positionY="0" width="128" height="44"/>
-        <element name="CDUser" positionX="-63" positionY="18" width="128" height="44"/>
-        <element name="Item" positionX="-63" positionY="36" width="128" height="44"/>
-    </elements>
 </model>
